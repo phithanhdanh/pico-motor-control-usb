@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"binary_info.h": "c",
+			"gpio.h": "c",
+			"pwm.h": "c"
+		}
+	}
+}
