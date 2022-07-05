@@ -47,9 +47,12 @@ bool repeating_timer_callback(struct repeating_timer *t) {
 	velocity = delta/((new_time-old_time)*1e-6);
 	position = new_value;	//ko chinh cho vi tri ve 0 khi qua 8000 duoc vi phai sua ct torng file .pio
 	old_value = new_value;
+	old_time = new_time;
 
 	// Thay lenh printf nay bang frame nhan ve mong muon
-    printf("position %8d, velocity %lf\n", position, velocity);
+	printf("%8dP\n",position);
+	printf("%lfV\n",velocity);
+    //printf("position %8d, velocity %lf\n", position, velocity);
 
     return true;
 }
@@ -69,6 +72,7 @@ int main() {
     // Get some sensible defaults for the slice configuration. By default, the
     // counter is allowed to wrap over its maximum range (0 to 2**16-1)
     pwm_config config = pwm_get_default_config();
+	pwm_set_wrap(slice_num, WRAP);
     // Load the configuration into our PWM slice, and set it running.
     pwm_init(slice_num, &config, true);
    
