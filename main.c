@@ -50,7 +50,7 @@ bool repeating_timer_callback(struct repeating_timer *t) {
 	old_time = new_time;
 
 	// Thay lenh printf nay bang frame nhan ve mong muon
-	printf("%8dP\n",position);
+	printf("%ldP\n",position);
 	printf("%lfV\n",velocity);
     //printf("position %8d, velocity %lf\n", position, velocity);
 
