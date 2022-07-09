@@ -1,0 +1,106 @@
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe.config
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.pdb
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.xml
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\de\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\es\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\fr\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\hu\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\it\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\ja\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\pt\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\ru\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\sk\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\sv\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\tr\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csprojAssemblyReference.cache
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.ResolveComReference.cache
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Form1.resources
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Properties.Resources.resources
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.GenerateResource.cache
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
+D:\Trọng Thanh\visual code\C#\Test_GUI_Drawing_Graph\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe.config
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.pdb
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.xml
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\de\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\es\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\fr\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\hu\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\it\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\ja\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\pt\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\ru\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\sk\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\sv\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\tr\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csprojAssemblyReference.cache
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.ResolveComReference.cache
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Form1.resources
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Properties.Resources.resources
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.GenerateResource.cache
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csprojAssemblyReference.cache
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.ResolveComReference.cache
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Form1.resources
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Properties.Resources.resources
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.GenerateResource.cache
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe.config
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.pdb
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.xml
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\de\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\es\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\fr\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\hu\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\it\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\ja\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\pt\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\ru\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\sk\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\sv\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\tr\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-cn\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-tw\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe.config
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.pdb
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.xml
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.AssemblyReference.cache
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.SuggestedBindingRedirects.cache
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.ResolveComReference.cache
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Form1.resources
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Properties.Resources.resources
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.GenerateResource.cache
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CoreCompileInputs.cache
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
+C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb

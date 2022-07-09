@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "75fc701b-71fc-4aaa-945c-428716e40027": {
+      "ProjectGuid": "75fc701b-71fc-4aaa-945c-428716e40027",
+      "DisplayName": "Test_GUI_Drawing_Graph",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

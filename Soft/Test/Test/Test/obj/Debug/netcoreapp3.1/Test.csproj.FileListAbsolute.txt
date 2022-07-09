@@ -1,0 +1,11 @@
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\bin\Debug\netcoreapp3.1\Test.exe
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\bin\Debug\netcoreapp3.1\Test.deps.json
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.json
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\bin\Debug\netcoreapp3.1\Test.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\bin\Debug\netcoreapp3.1\Test.pdb
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\obj\Debug\netcoreapp3.1\Test.dll
+D:\Trọng Thanh\visual code\C#\De tai cuoi khoa Embedded\Test\Test\Test\obj\Debug\netcoreapp3.1\Test.pdb
