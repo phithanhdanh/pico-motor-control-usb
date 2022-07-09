@@ -57,6 +57,7 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnReverse = new System.Windows.Forms.Button();
             this.btnForward = new System.Windows.Forms.Button();
+            this.txtTemp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // zedGraphControl1
@@ -279,6 +280,7 @@
             this.txtSp.Name = "txtSp";
             this.txtSp.Size = new System.Drawing.Size(57, 22);
             this.txtSp.TabIndex = 25;
+            this.txtSp.TextChanged += new System.EventHandler(this.txtSp_TextChanged);
             // 
             // lbPV
             // 
@@ -330,11 +332,20 @@
             this.btnForward.UseVisualStyleBackColor = true;
             this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
             // 
+            // txtTemp
+            // 
+            this.txtTemp.Location = new System.Drawing.Point(393, 353);
+            this.txtTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTemp.Name = "txtTemp";
+            this.txtTemp.Size = new System.Drawing.Size(57, 22);
+            this.txtTemp.TabIndex = 36;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 435);
+            this.Controls.Add(this.txtTemp);
             this.Controls.Add(this.btnForward);
             this.Controls.Add(this.btnReverse);
             this.Controls.Add(this.btnOK);
@@ -400,6 +411,7 @@
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnReverse;
         private System.Windows.Forms.Button btnForward;
+        private System.Windows.Forms.TextBox txtTemp;
     }
 }
 

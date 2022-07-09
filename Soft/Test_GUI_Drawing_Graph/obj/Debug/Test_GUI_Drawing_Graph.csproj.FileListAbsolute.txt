@@ -104,3 +104,31 @@ C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GU
 C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
 C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
 C:\Users\Thanh Tuan\Downloads\Soft\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe.config
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.pdb
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.xml
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\de\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\es\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\fr\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\hu\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\it\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\ja\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\pt\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\ru\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\sk\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\sv\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\tr\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.AssemblyReference.cache
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.SuggestedBindingRedirects.cache
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.ResolveComReference.cache
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Form1.resources
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Properties.Resources.resources
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.GenerateResource.cache
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CoreCompileInputs.cache
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
+C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb

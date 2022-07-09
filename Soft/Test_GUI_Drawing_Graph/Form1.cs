@@ -18,12 +18,12 @@ namespace Test_GUI_Drawing_Graph
 {
     public partial class Form1 : Form
     { 
-        double time_start = 0;                            
-        const int BUFFER_SIZE = 34;
+        double time_start = 0;
+        const int BUFFER_SIZE = 11;
         byte[] txbuff = new byte[BUFFER_SIZE]; // 1 byte == 8 bit unsigned integer
         /* Transfer data buffer txbuff[] */
-        // 0   | 1                  | 2 - 9     | 10 - 17  | 18 - 25   | 26 - 33  | 
-        // run | motor direction    | Setpoint  | Kp       | Ki        | Kd       |
+        // 0   | 1                  | 2 - 9     | 10 - 17  | 18 - 25   | 26 - 33  | 34
+        // run | motor direction    | Setpoint  | Kp       | Ki        | Kd       | 0x0D
         /// <Explanation>
         /// - Default: run = 0. If run = 1 then DC Motor starts to run 
         /// - motor direction
@@ -79,6 +79,8 @@ namespace Test_GUI_Drawing_Graph
                 label1.Text = "Connecting";
                 label1.ForeColor = Color.Green;
                 lbBaud.Text = "Baudrate: 115200";
+                serialPort.RtsEnable = true;
+                serialPort.DtrEnable = true;
             }
         }
 
@@ -97,9 +99,11 @@ namespace Test_GUI_Drawing_Graph
         {
             if (serialPort.IsOpen)
             {
-                txbuff[0] = 1;
+                txbuff[0] = 1;               
+                txbuff[10] = 0x0D;
                 label1.Text = "DC motor is set to run";
-                serialPort.Write(txbuff, 0, BUFFER_SIZE);
+                //serialPort.Write(txbuff, 0, 3);
+                //serialPort.Write(txbuff, 0, BUFFER_SIZE);
                 label1.ForeColor = Color.DarkOrange;
                 btRun.Enabled = false;
                 resetGraph();
@@ -110,11 +114,14 @@ namespace Test_GUI_Drawing_Graph
 
         private void btClear_Click(object sender, EventArgs e)
         {
-            btRun.Enabled = true;                       
+            btRun.Enabled = true;
+            btnForward.Enabled = true;
+            btnReverse.Enabled = true;
             if (serialPort.IsOpen)
             {
                 txbuff[0] = 0;
-                //btRun.Enabled = true;
+                txbuff[1] = 0;
+                txbuff[10] = 0x13;
 
                 btnPID.Enabled = true;
                 btnPID.ForeColor = Color.Black;               
@@ -122,7 +129,7 @@ namespace Test_GUI_Drawing_Graph
                 txtKp.Text = "0";
                 txtKi.Text = "0";
                 txtKd.Text = "0";               
-                txtSp.Text = "0";
+                //txtSp.Text = "0";
 
                 /*--------- Setpoint ---------*/
                 byte[] setPoint = new byte[8];
@@ -134,29 +141,30 @@ namespace Test_GUI_Drawing_Graph
                 dProcessVar = 0;
                 txtPv.Text = dProcessVar.ToString();
 
-                /*--------- Kp ---------*/
-                byte[] kp = new byte[8];
-                byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
-                for (int i = 0; i < tmpKP.Length; i++)
-                    kp[i] = tmpKP[i];
-                Array.Copy(kp, 0, txbuff, 10, 8);
+                ///*--------- Kp ---------*/
+                //byte[] kp = new byte[8];
+                //byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
+                //for (int i = 0; i < tmpKP.Length; i++)
+                //    kp[i] = tmpKP[i];
+                //Array.Copy(kp, 0, txbuff, 10, 8);
 
-                /*--------- Ki ---------*/
-                byte[] ki = new byte[8];
-                byte[] tmpKI = Encoding.ASCII.GetBytes(txtKi.Text);
-                for (int i = 0; i < tmpKI.Length; i++)
-                    ki[i] = tmpKI[i];
-                Array.Copy(ki, 0, txbuff, 18, 8);
+                ///*--------- Ki ---------*/
+                //byte[] ki = new byte[8];
+                //byte[] tmpKI = Encoding.ASCII.GetBytes(txtKi.Text);
+                //for (int i = 0; i < tmpKI.Length; i++)
+                //    ki[i] = tmpKI[i];
+                //Array.Copy(ki, 0, txbuff, 18, 8);
 
-                /*--------- Kd ---------*/
-                byte[] kd = new byte[8];
-                byte[] tmpKD = Encoding.ASCII.GetBytes(txtKd.Text);
-                for (int i = 0; i < tmpKD.Length; i++)
-                    kd[i] = tmpKD[i];
-                Array.Copy(kd, 0, txbuff, 26, 8);               
+                ///*--------- Kd ---------*/
+                //byte[] kd = new byte[8];
+                //byte[] tmpKD = Encoding.ASCII.GetBytes(txtKd.Text);
+                //for (int i = 0; i < tmpKD.Length; i++)
+                //    kd[i] = tmpKD[i];
+                //Array.Copy(kd, 0, txbuff, 26, 8);               
                
 
                 /* REMEMBER TO SEND DATA */
+                //serialPort.Write(txbuff, 0, 11);
                 serialPort.Write(txbuff, 0, BUFFER_SIZE);
 
                 label1.Text = "All the data has been cleared";
@@ -201,6 +209,7 @@ namespace Test_GUI_Drawing_Graph
              */
             double.TryParse(setPoint, out dSetPoint);
             double.TryParse(processVar, out dProcessVar);
+            txtTemp.Text = dProcessVar.ToString();
             //if (dProcessVar == 0) return;     // Not showing process variables that equal to zero
             if (zedGraphControl1.GraphPane.CurveList.Count <= 0) return; // Kiem tra viec khoi tao cac duong curve
 
@@ -335,6 +344,7 @@ namespace Test_GUI_Drawing_Graph
         private void btnSend_Click(object sender, EventArgs e)
         {
             serialPort.Write(txbuff, 0, BUFFER_SIZE);
+            //serialPort.Write(txbuff, 0, 1);
             label1.Text = "Drawing";
             label1.ForeColor = Color.Teal;
 
@@ -348,12 +358,19 @@ namespace Test_GUI_Drawing_Graph
         {
             //txbuff[0] = 1;
             txbuff[1] = 0;  // Forward
+            btnForward.Enabled = false;
         }
 
         private void btnReverse_Click(object sender, EventArgs e)
         {
             //txbuff[0] = 1;
             txbuff[1] = 1;  // Reverse
+            btnReverse.Enabled = false;
+        }
+
+        private void txtSp_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btnStop_Click(object sender, EventArgs e)

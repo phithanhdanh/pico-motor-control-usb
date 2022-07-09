@@ -9,6 +9,7 @@
 			"binary_info.h": "c",
 			"gpio.h": "c",
 			"pwm.h": "c"
-		}
+		},
+		"makefile.extensionOutputFolder": "./.vscode"
 	}
 }
