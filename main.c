@@ -26,9 +26,9 @@
 
 #define ENDSTDIN	255
 #define CR	13
-
-
 #define LED_PIN 25
+
+#define BUFFER_SIZE 11
 
 double velocity = 0;
 int position = 0;
@@ -51,7 +51,7 @@ int count = 0;
 
 double Sp;
 uint8_t rcvByte[8];
-uint8_t buffer[12];
+uint8_t buffer[BUFFER_SIZE];
 
 float PID_Controller(float sp, float pv, float kp, float ki, float kd){
 	float e = sp - pv;
@@ -132,7 +132,7 @@ int main() {
     // Get some sensible defaults for the slice configuration. By default, the
     // counter is allowed to wrap over its maximum range (0 to 2**16-1)
     pwm_config config = pwm_get_default_config();
-	pwm_config_set_clkdiv_int(&config,4);
+	//pwm_config_set_clkdiv_int(&config,4);
 	pwm_set_wrap(slice_num, WRAP);
     // Load the configuration into our PWM slice, and set it running.
     pwm_init(slice_num, &config, true);

@@ -26,7 +26,7 @@ namespace Test_GUI_Drawing_Graph
         // run | motor direction    | Setpoint  | Kp       | Ki        | Kd       | 0x0D
         /// <Explanation>
         /// - Default: run = 0. If run = 1 then DC Motor starts to run 
-        /// - motor direction
+        /// - motor direction. 0 means forward and 1 means reverse
         /// - K_: Kp, Ki, Kd are all double variables [double -- 64 bits -- 8 bytes]       
         /// </summary>
 
@@ -78,7 +78,7 @@ namespace Test_GUI_Drawing_Graph
                 btExit.Enabled = true;
                 label1.Text = "Connecting";
                 label1.ForeColor = Color.Green;
-                lbBaud.Text = "Baudrate: 115200";
+                lbBaud.Text = "Baudrate: 9600";
                 serialPort.RtsEnable = true;
                 serialPort.DtrEnable = true;
             }
@@ -101,9 +101,7 @@ namespace Test_GUI_Drawing_Graph
             {
                 txbuff[0] = 1;               
                 txbuff[10] = 0x0D;
-                label1.Text = "DC motor is set to run";
-                //serialPort.Write(txbuff, 0, 3);
-                //serialPort.Write(txbuff, 0, BUFFER_SIZE);
+                label1.Text = "DC motor is set to run";                                
                 label1.ForeColor = Color.DarkOrange;
                 btRun.Enabled = false;
                 resetGraph();
@@ -121,15 +119,12 @@ namespace Test_GUI_Drawing_Graph
             {
                 txbuff[0] = 0;
                 txbuff[1] = 0;
-                txbuff[10] = 0x13;
-
-                btnPID.Enabled = true;
-                btnPID.ForeColor = Color.Black;               
+                txbuff[10] = 0x0D;                               
 
                 txtKp.Text = "0";
                 txtKi.Text = "0";
                 txtKd.Text = "0";               
-                //txtSp.Text = "0";
+                txtSp.Text = "0";
 
                 /*--------- Setpoint ---------*/
                 byte[] setPoint = new byte[8];
@@ -138,8 +133,8 @@ namespace Test_GUI_Drawing_Graph
                     setPoint[i] = tmpSP[i];
                 Array.Copy(setPoint, 0, txbuff, 2, 8);
 
-                dProcessVar = 0;
-                txtPv.Text = dProcessVar.ToString();
+                //dProcessVar = 0;
+                //txtPv.Text = dProcessVar.ToString();
 
                 ///*--------- Kp ---------*/
                 //byte[] kp = new byte[8];
@@ -163,8 +158,7 @@ namespace Test_GUI_Drawing_Graph
                 //Array.Copy(kd, 0, txbuff, 26, 8);               
                
 
-                /* REMEMBER TO SEND DATA */
-                //serialPort.Write(txbuff, 0, 11);
+                /* REMEMBER TO SEND DATA */                
                 serialPort.Write(txbuff, 0, BUFFER_SIZE);
 
                 label1.Text = "All the data has been cleared";
@@ -184,6 +178,9 @@ namespace Test_GUI_Drawing_Graph
             if (!serialPort.IsOpen)
             {
                 progressBar1.Value = 0;
+                label1.Text = "Disconnected";
+                label1.ForeColor = Color.Black;
+                serialPort.Open();
             }
             else if (serialPort.IsOpen) 
             {
@@ -302,52 +299,46 @@ namespace Test_GUI_Drawing_Graph
                     }                              
             }
         }
-        private void btnPID_Click(object sender, EventArgs e)
-        {
-           
-            btnPID.ForeColor = Color.Green;
+        //private void btnPID_Click(object sender, EventArgs e)
+        //{
+                      
+        //    /*--------- Kp ---------*/
+        //    byte[] kp = new byte[8];
+        //    byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
+        //    for (int i = 0; i < tmpKP.Length; i++)
+        //        kp[i] = tmpKP[i];
+        //    Array.Copy(kp, 0, txbuff, 10, 8);
 
-                        
-            /*--------- Kp ---------*/
-            byte[] kp = new byte[8];
-            byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
-            for (int i = 0; i < tmpKP.Length; i++)
-                kp[i] = tmpKP[i];
-            Array.Copy(kp, 0, txbuff, 10, 8);
+        //    /*--------- Ki ---------*/
+        //    byte[] ki = new byte[8];
+        //    byte[] tmpKI = Encoding.ASCII.GetBytes(txtKi.Text);
+        //    for (int i = 0; i < tmpKI.Length; i++)
+        //        ki[i] = tmpKI[i];
+        //    Array.Copy(ki, 0, txbuff, 18, 8);
 
-            /*--------- Ki ---------*/
-            byte[] ki = new byte[8];
-            byte[] tmpKI = Encoding.ASCII.GetBytes(txtKi.Text);
-            for (int i = 0; i < tmpKI.Length; i++)
-                ki[i] = tmpKI[i];
-            Array.Copy(ki, 0, txbuff, 18, 8);
-
-            /*--------- Kd ---------*/
-            byte[] kd = new byte[8];
-            byte[] tmpKD = Encoding.ASCII.GetBytes(txtKd.Text);
-            for (int i = 0; i < tmpKD.Length; i++)
-                kd[i] = tmpKD[i];
-            Array.Copy(kd, 0, txbuff, 26, 8);           
-        }
-
-        private void btnSTR_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void btnLQR_Click(object sender, EventArgs e)
-        {
-           
-
-        }
+        //    /*--------- Kd ---------*/
+        //    byte[] kd = new byte[8];
+        //    byte[] tmpKD = Encoding.ASCII.GetBytes(txtKd.Text);
+        //    for (int i = 0; i < tmpKD.Length; i++)
+        //        kd[i] = tmpKD[i];
+        //    Array.Copy(kd, 0, txbuff, 26, 8);           
+        //}        
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            serialPort.Write(txbuff, 0, BUFFER_SIZE);
-            //serialPort.Write(txbuff, 0, 1);
-            label1.Text = "Drawing";
-            label1.ForeColor = Color.Teal;
-
+            if (!serialPort.IsOpen)
+            {
+                serialPort.Open();
+                serialPort.Write(txbuff, 0, BUFFER_SIZE);
+                label1.Text = "Drawing responses";
+                label1.ForeColor = Color.Teal;
+            }  
+            else if (serialPort.IsOpen)
+            {
+                serialPort.Write(txbuff, 0, BUFFER_SIZE);
+                label1.Text = "Drawing responses";
+                label1.ForeColor = Color.Teal;
+            }
         }
 
         private void btnSquarePulse_Click(object sender, EventArgs e)

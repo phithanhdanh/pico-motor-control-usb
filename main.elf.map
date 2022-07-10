@@ -1205,9 +1205,9 @@ Discarded input sections
  .text.pio_sm_drain_tx_fifo
                 0x00000000       0x40 CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .bss.claimed   0x00000000        0x1 CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x00000000        0x0 C:\Users\THANHT~1\AppData\Local\Temp\ccOPnwQL.o
- .data          0x00000000        0x0 C:\Users\THANHT~1\AppData\Local\Temp\ccOPnwQL.o
- .bss           0x00000000        0x0 C:\Users\THANHT~1\AppData\Local\Temp\ccOPnwQL.o
+ .text          0x00000000        0x0 C:\Users\THANHT~1\AppData\Local\Temp\cce9iuaK.o
+ .data          0x00000000        0x0 C:\Users\THANHT~1\AppData\Local\Temp\cce9iuaK.o
+ .bss           0x00000000        0x0 C:\Users\THANHT~1\AppData\Local\Temp\cce9iuaK.o
  .data          0x00000000        0x0 c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-atof.o)
@@ -1534,7 +1534,7 @@ LOAD c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\THANHT~1\AppData\Local\Temp\ccOPnwQL.o
+ .boot2         0x10000000      0x100 C:\Users\THANHT~1\AppData\Local\Temp\cce9iuaK.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2958,8 +2958,9 @@ LOAD c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
                 0x200016d8       0x10 CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.boot2_copyout
                 0x200016e8      0x100 CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.buffer    0x200017e8        0xc CMakeFiles/main.dir/main.c.obj
+ .bss.buffer    0x200017e8        0xb CMakeFiles/main.dir/main.c.obj
                 0x200017e8                buffer
+ *fill*         0x200017f3        0x1 
  .bss.claimed   0x200017f4        0x4 CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .bss.configured_freq
                 0x200017f8       0x28 CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -3126,7 +3127,7 @@ LOAD CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_i
 LOAD CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 LOAD CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD C:\Users\THANHT~1\AppData\Local\Temp\ccOPnwQL.o
+LOAD C:\Users\THANHT~1\AppData\Local\Temp\cce9iuaK.o
 LOAD c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3248,7 +3249,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000826       0x2c CMakeFiles/main.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x00000852       0x22 C:\Users\THANHT~1\AppData\Local\Temp\ccOPnwQL.o
+                0x00000852       0x22 C:\Users\THANHT~1\AppData\Local\Temp\cce9iuaK.o
  .ARM.attributes
                 0x00000874       0x1e c:/vsarm/armcc/102021~1.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes

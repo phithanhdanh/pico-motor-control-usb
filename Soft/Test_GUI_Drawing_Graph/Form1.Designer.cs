@@ -40,7 +40,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelStatus = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnPID = new System.Windows.Forms.Button();
             this.txtKp = new System.Windows.Forms.TextBox();
             this.txtKi = new System.Windows.Forms.TextBox();
             this.txtKd = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@
             this.btnReverse = new System.Windows.Forms.Button();
             this.btnForward = new System.Windows.Forms.Button();
             this.txtTemp = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // zedGraphControl1
@@ -122,7 +122,7 @@
             // 
             // btClear
             // 
-            this.btClear.Location = new System.Drawing.Point(288, 141);
+            this.btClear.Location = new System.Drawing.Point(379, 141);
             this.btClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btClear.Name = "btClear";
             this.btClear.Size = new System.Drawing.Size(85, 46);
@@ -170,17 +170,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "_____________";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // btnPID
-            // 
-            this.btnPID.Location = new System.Drawing.Point(22, 200);
-            this.btnPID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPID.Name = "btnPID";
-            this.btnPID.Size = new System.Drawing.Size(75, 47);
-            this.btnPID.TabIndex = 12;
-            this.btnPID.Text = "PID";
-            this.btnPID.UseVisualStyleBackColor = true;
-            this.btnPID.Click += new System.EventHandler(this.btnPID_Click);
             // 
             // txtKp
             // 
@@ -255,7 +244,7 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(379, 141);
+            this.btnStop.Location = new System.Drawing.Point(288, 141);
             this.btnStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(85, 46);
@@ -340,11 +329,21 @@
             this.txtTemp.Size = new System.Drawing.Size(57, 22);
             this.txtTemp.TabIndex = 36;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 252);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 16);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "PID Controller";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 435);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTemp);
             this.Controls.Add(this.btnForward);
             this.Controls.Add(this.btnReverse);
@@ -362,7 +361,6 @@
             this.Controls.Add(this.txtKd);
             this.Controls.Add(this.txtKi);
             this.Controls.Add(this.txtKp);
-            this.Controls.Add(this.btnPID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.progressBar1);
@@ -394,7 +392,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnPID;
         private System.Windows.Forms.TextBox txtKp;
         private System.Windows.Forms.TextBox txtKi;
         private System.Windows.Forms.TextBox txtKd;
@@ -412,6 +409,7 @@
         private System.Windows.Forms.Button btnReverse;
         private System.Windows.Forms.Button btnForward;
         private System.Windows.Forms.TextBox txtTemp;
+        private System.Windows.Forms.Label label2;
     }
 }
 

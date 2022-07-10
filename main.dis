@@ -448,9 +448,9 @@ Disassembly of section .text:
 1000042a:	659e      	str	r6, [r3, #88]	; 0x58
 1000042c:	65de      	str	r6, [r3, #92]	; 0x5c
 1000042e:	661a      	str	r2, [r3, #96]	; 0x60
-10000430:	2240      	movs	r2, #64	; 0x40
+10000430:	2210      	movs	r2, #16
 10000432:	655a      	str	r2, [r3, #84]	; 0x54
-10000434:	3a3f      	subs	r2, #63	; 0x3f
+10000434:	3a0f      	subs	r2, #15
 10000436:	651a      	str	r2, [r3, #80]	; 0x50
 10000438:	4692      	mov	sl, r2
 1000043a:	f000 ffed 	bl	10001418 <time_us_64>
