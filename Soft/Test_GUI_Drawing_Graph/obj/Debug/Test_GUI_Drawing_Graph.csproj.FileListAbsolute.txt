@@ -132,3 +132,29 @@ C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\T
 C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
 C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
 C:\VSARM\sdk\pico\pico-motor-control-usb\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe.config
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.exe
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\Test_GUI_Drawing_Graph.pdb
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\ZedGraph.xml
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\de\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\es\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\fr\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\hu\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\it\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\ja\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\pt\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\ru\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\sk\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\sv\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\tr\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-cn\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\bin\Debug\zh-tw\ZedGraph.resources.dll
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csprojAssemblyReference.cache
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.ResolveComReference.cache
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Form1.resources
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.Properties.Resources.resources
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.GenerateResource.cache
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.csproj.CopyComplete
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.exe
+B:\DLDKMT\Hoc phan mo rong\pico-motor-control-usb-issue-disconnecting\pico-motor-control-usb-issue-disconnecting\Soft\Test_GUI_Drawing_Graph\obj\Debug\Test_GUI_Drawing_Graph.pdb

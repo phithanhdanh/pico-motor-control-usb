@@ -19,7 +19,7 @@ namespace Test_GUI_Drawing_Graph
     public partial class Form1 : Form
     { 
         double time_start = 0;
-        const int BUFFER_SIZE = 11;
+        const int BUFFER_SIZE = 35;
         byte[] txbuff = new byte[BUFFER_SIZE]; // 1 byte == 8 bit unsigned integer
         /* Transfer data buffer txbuff[] */
         // 0   | 1                  | 2 - 9     | 10 - 17  | 18 - 25   | 26 - 33  | 34
@@ -79,6 +79,7 @@ namespace Test_GUI_Drawing_Graph
                 label1.Text = "Connecting";
                 label1.ForeColor = Color.Green;
                 lbBaud.Text = "Baudrate: 9600";
+                
                 serialPort.RtsEnable = true;
                 serialPort.DtrEnable = true;
             }
@@ -100,7 +101,7 @@ namespace Test_GUI_Drawing_Graph
             if (serialPort.IsOpen)
             {
                 txbuff[0] = 1;               
-                txbuff[10] = 0x0D;
+                txbuff[BUFFER_SIZE - 1] = 0x0D;
                 label1.Text = "DC motor is set to run";                                
                 label1.ForeColor = Color.DarkOrange;
                 btRun.Enabled = false;
@@ -119,12 +120,12 @@ namespace Test_GUI_Drawing_Graph
             {
                 txbuff[0] = 0;
                 txbuff[1] = 0;
-                txbuff[10] = 0x0D;                               
+                txbuff[BUFFER_SIZE-1] = 0x0D;                               
 
-                txtKp.Text = "0";
-                txtKi.Text = "0";
-                txtKd.Text = "0";               
-                txtSp.Text = "0";
+                //txtKp.Text = "0";
+                //txtKi.Text = "0";
+                //txtKd.Text = "0";               
+                //txtSp.Text = "0";
 
                 /*--------- Setpoint ---------*/
                 byte[] setPoint = new byte[8];
@@ -133,15 +134,12 @@ namespace Test_GUI_Drawing_Graph
                     setPoint[i] = tmpSP[i];
                 Array.Copy(setPoint, 0, txbuff, 2, 8);
 
-                //dProcessVar = 0;
-                //txtPv.Text = dProcessVar.ToString();
-
-                ///*--------- Kp ---------*/
-                //byte[] kp = new byte[8];
-                //byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
-                //for (int i = 0; i < tmpKP.Length; i++)
-                //    kp[i] = tmpKP[i];
-                //Array.Copy(kp, 0, txbuff, 10, 8);
+                /*--------- Kp ---------*/
+                byte[] kp = new byte[8];
+                byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
+                for (int i = 0; i < tmpKP.Length; i++)
+                    kp[i] = tmpKP[i];
+                Array.Copy(kp, 0, txbuff, 10, 8);
 
                 ///*--------- Ki ---------*/
                 //byte[] ki = new byte[8];
@@ -155,15 +153,14 @@ namespace Test_GUI_Drawing_Graph
                 //byte[] tmpKD = Encoding.ASCII.GetBytes(txtKd.Text);
                 //for (int i = 0; i < tmpKD.Length; i++)
                 //    kd[i] = tmpKD[i];
-                //Array.Copy(kd, 0, txbuff, 26, 8);               
-               
+                //Array.Copy(kd, 0, txbuff, 26, 8);
 
-                /* REMEMBER TO SEND DATA */                
+
+                /* REMEMBER TO SEND DATA */
                 serialPort.Write(txbuff, 0, BUFFER_SIZE);
 
                 label1.Text = "All the data has been cleared";
                 label1.ForeColor = Color.YellowGreen;
-
                 resetGraph();                  
             }
         }
@@ -180,7 +177,7 @@ namespace Test_GUI_Drawing_Graph
                 progressBar1.Value = 0;
                 label1.Text = "Disconnected";
                 label1.ForeColor = Color.Black;
-                serialPort.Open();
+                //serialPort.Open();
             }
             else if (serialPort.IsOpen) 
             {
@@ -205,8 +202,8 @@ namespace Test_GUI_Drawing_Graph
              * Reference: https://docs.microsoft.com/en-us/dotnet/api/system.double.tryparse?view=net-6.0
              */
             double.TryParse(setPoint, out dSetPoint);
-            double.TryParse(processVar, out dProcessVar);
-            txtTemp.Text = dProcessVar.ToString();
+            double.TryParse(processVar, out dProcessVar);                    
+            
             //if (dProcessVar == 0) return;     // Not showing process variables that equal to zero
             if (zedGraphControl1.GraphPane.CurveList.Count <= 0) return; // Kiem tra viec khoi tao cac duong curve
 
@@ -298,31 +295,7 @@ namespace Test_GUI_Drawing_Graph
                         strPocessVar = dataList[2];
                     }                              
             }
-        }
-        //private void btnPID_Click(object sender, EventArgs e)
-        //{
-                      
-        //    /*--------- Kp ---------*/
-        //    byte[] kp = new byte[8];
-        //    byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
-        //    for (int i = 0; i < tmpKP.Length; i++)
-        //        kp[i] = tmpKP[i];
-        //    Array.Copy(kp, 0, txbuff, 10, 8);
-
-        //    /*--------- Ki ---------*/
-        //    byte[] ki = new byte[8];
-        //    byte[] tmpKI = Encoding.ASCII.GetBytes(txtKi.Text);
-        //    for (int i = 0; i < tmpKI.Length; i++)
-        //        ki[i] = tmpKI[i];
-        //    Array.Copy(ki, 0, txbuff, 18, 8);
-
-        //    /*--------- Kd ---------*/
-        //    byte[] kd = new byte[8];
-        //    byte[] tmpKD = Encoding.ASCII.GetBytes(txtKd.Text);
-        //    for (int i = 0; i < tmpKD.Length; i++)
-        //        kd[i] = tmpKD[i];
-        //    Array.Copy(kd, 0, txbuff, 26, 8);           
-        //}        
+        }        
 
         private void btnSend_Click(object sender, EventArgs e)
         {
@@ -341,15 +314,12 @@ namespace Test_GUI_Drawing_Graph
             }
         }
 
-        private void btnSquarePulse_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btnForward_Click(object sender, EventArgs e)
         {
             //txbuff[0] = 1;
             txbuff[1] = 0;  // Forward
             btnForward.Enabled = false;
+            btnReverse.Enabled = true;
         }
 
         private void btnReverse_Click(object sender, EventArgs e)
@@ -357,9 +327,15 @@ namespace Test_GUI_Drawing_Graph
             //txbuff[0] = 1;
             txbuff[1] = 1;  // Reverse
             btnReverse.Enabled = false;
+            btnForward.Enabled = true;
         }
 
         private void txtSp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbKi_Click(object sender, EventArgs e)
         {
 
         }
@@ -390,6 +366,27 @@ namespace Test_GUI_Drawing_Graph
             //Encoding.ASCII.GetBytes(txtSp.Text);
             //BitConverter.GetBytes(Int16.Parse(txtSp.Text));
             Array.Copy(setPoint, 0, txbuff, 2, 8);
+
+            /*--------- Kp ---------*/
+            byte[] kp = new byte[8];
+            byte[] tmpKP = Encoding.ASCII.GetBytes(txtKp.Text);
+            for (int i = 0; i < tmpKP.Length; i++)
+                kp[i] = tmpKP[i];
+            Array.Copy(kp, 0, txbuff, 10, 8);
+
+            ///*--------- Ki ---------*/
+            //byte[] ki = new byte[8];
+            //byte[] tmpKI = Encoding.ASCII.GetBytes(txtKi.Text);
+            //for (int i = 0; i < tmpKI.Length; i++)
+            //    ki[i] = tmpKI[i];
+            //Array.Copy(ki, 0, txbuff, 18, 8);
+
+            ///*--------- Kd ---------*/
+            //byte[] kd = new byte[8];
+            //byte[] tmpKD = Encoding.ASCII.GetBytes(txtKd.Text);
+            //for (int i = 0; i < tmpKD.Length; i++)
+            //    kd[i] = tmpKD[i];
+            //Array.Copy(kd, 0, txbuff, 26, 8);
 
             label1.Text = "The data is ready to be transferred";
             label1.ForeColor = Color.Red;

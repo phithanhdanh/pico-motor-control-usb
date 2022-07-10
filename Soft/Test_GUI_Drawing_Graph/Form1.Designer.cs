@@ -56,8 +56,14 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnReverse = new System.Windows.Forms.Button();
             this.btnForward = new System.Windows.Forms.Button();
-            this.txtTemp = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // zedGraphControl1
@@ -89,7 +95,7 @@
             // 
             // btConnect
             // 
-            this.btConnect.Location = new System.Drawing.Point(287, 86);
+            this.btConnect.Location = new System.Drawing.Point(16, 35);
             this.btConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btConnect.Name = "btConnect";
             this.btConnect.Size = new System.Drawing.Size(86, 46);
@@ -100,10 +106,10 @@
             // 
             // btExit
             // 
-            this.btExit.Location = new System.Drawing.Point(100, 353);
+            this.btExit.Location = new System.Drawing.Point(155, 427);
             this.btExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(181, 54);
+            this.btExit.Size = new System.Drawing.Size(179, 35);
             this.btExit.TabIndex = 4;
             this.btExit.Text = "Exit";
             this.btExit.UseVisualStyleBackColor = true;
@@ -111,7 +117,7 @@
             // 
             // btRun
             // 
-            this.btRun.Location = new System.Drawing.Point(379, 86);
+            this.btRun.Location = new System.Drawing.Point(109, 35);
             this.btRun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btRun.Name = "btRun";
             this.btRun.Size = new System.Drawing.Size(85, 46);
@@ -122,7 +128,7 @@
             // 
             // btClear
             // 
-            this.btClear.Location = new System.Drawing.Point(379, 141);
+            this.btClear.Location = new System.Drawing.Point(111, 155);
             this.btClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btClear.Name = "btClear";
             this.btClear.Size = new System.Drawing.Size(85, 46);
@@ -142,7 +148,7 @@
             // 
             // serialPort
             // 
-            this.serialPort.PortName = "COM13";
+            this.serialPort.PortName = "COM8";
             this.serialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.SerialDataReceived);
             // 
             // timer1
@@ -156,7 +162,7 @@
             this.labelStatus.AutoSize = true;
             this.labelStatus.Location = new System.Drawing.Point(22, 141);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(7, 16);
+            this.labelStatus.Size = new System.Drawing.Size(8, 17);
             this.labelStatus.TabIndex = 10;
             this.labelStatus.Text = "\r\n";
             this.labelStatus.Click += new System.EventHandler(this.labelStatus_Click);
@@ -164,61 +170,62 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 141);
+            this.label1.Location = new System.Drawing.Point(222, 122);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.Size = new System.Drawing.Size(112, 17);
             this.label1.TabIndex = 11;
             this.label1.Text = "_____________";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtKp
             // 
-            this.txtKp.Location = new System.Drawing.Point(52, 281);
+            this.txtKp.Location = new System.Drawing.Point(69, 20);
             this.txtKp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKp.Name = "txtKp";
-            this.txtKp.Size = new System.Drawing.Size(57, 22);
+            this.txtKp.Size = new System.Drawing.Size(80, 22);
             this.txtKp.TabIndex = 16;
             // 
             // txtKi
             // 
-            this.txtKi.Location = new System.Drawing.Point(151, 281);
+            this.txtKi.Location = new System.Drawing.Point(69, 51);
             this.txtKi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKi.Name = "txtKi";
-            this.txtKi.Size = new System.Drawing.Size(57, 22);
+            this.txtKi.Size = new System.Drawing.Size(80, 22);
             this.txtKi.TabIndex = 17;
             // 
             // txtKd
             // 
-            this.txtKd.Location = new System.Drawing.Point(262, 281);
+            this.txtKd.Location = new System.Drawing.Point(69, 83);
             this.txtKd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKd.Name = "txtKd";
-            this.txtKd.Size = new System.Drawing.Size(57, 22);
+            this.txtKd.Size = new System.Drawing.Size(80, 22);
             this.txtKd.TabIndex = 18;
             // 
             // lbKp
             // 
             this.lbKp.AutoSize = true;
-            this.lbKp.Location = new System.Drawing.Point(22, 286);
+            this.lbKp.Location = new System.Drawing.Point(23, 25);
             this.lbKp.Name = "lbKp";
-            this.lbKp.Size = new System.Drawing.Size(23, 16);
+            this.lbKp.Size = new System.Drawing.Size(25, 17);
             this.lbKp.TabIndex = 19;
             this.lbKp.Text = "Kp";
             // 
             // lbKi
             // 
             this.lbKi.AutoSize = true;
-            this.lbKi.Location = new System.Drawing.Point(126, 286);
+            this.lbKi.Location = new System.Drawing.Point(23, 56);
             this.lbKi.Name = "lbKi";
-            this.lbKi.Size = new System.Drawing.Size(18, 16);
+            this.lbKi.Size = new System.Drawing.Size(20, 17);
             this.lbKi.TabIndex = 20;
             this.lbKi.Text = "Ki";
+            this.lbKi.Click += new System.EventHandler(this.lbKi_Click);
             // 
             // lbKd
             // 
             this.lbKd.AutoSize = true;
-            this.lbKd.Location = new System.Drawing.Point(230, 286);
+            this.lbKd.Location = new System.Drawing.Point(23, 88);
             this.lbKd.Name = "lbKd";
-            this.lbKd.Size = new System.Drawing.Size(23, 16);
+            this.lbKd.Size = new System.Drawing.Size(25, 17);
             this.lbKd.TabIndex = 21;
             this.lbKd.Text = "Kd";
             // 
@@ -227,13 +234,13 @@
             this.lbBaud.AutoSize = true;
             this.lbBaud.Location = new System.Drawing.Point(137, 86);
             this.lbBaud.Name = "lbBaud";
-            this.lbBaud.Size = new System.Drawing.Size(126, 16);
+            this.lbBaud.Size = new System.Drawing.Size(144, 17);
             this.lbBaud.TabIndex = 22;
             this.lbBaud.Text = "_________________";
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(379, 201);
+            this.btnSend.Location = new System.Drawing.Point(111, 95);
             this.btnSend.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(85, 46);
@@ -244,7 +251,7 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(288, 141);
+            this.btnStop.Location = new System.Drawing.Point(17, 155);
             this.btnStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(85, 46);
@@ -258,7 +265,7 @@
             this.lbSP.AutoSize = true;
             this.lbSP.Location = new System.Drawing.Point(1068, 18);
             this.lbSP.Name = "lbSP";
-            this.lbSP.Size = new System.Drawing.Size(57, 16);
+            this.lbSP.Size = new System.Drawing.Size(61, 17);
             this.lbSP.TabIndex = 26;
             this.lbSP.Text = "SetPoint";
             // 
@@ -276,7 +283,7 @@
             this.lbPV.AutoSize = true;
             this.lbPV.Location = new System.Drawing.Point(1068, 53);
             this.lbPV.Name = "lbPV";
-            this.lbPV.Size = new System.Drawing.Size(118, 16);
+            this.lbPV.Size = new System.Drawing.Size(122, 17);
             this.lbPV.TabIndex = 28;
             this.lbPV.Text = "Process Variables";
             // 
@@ -290,7 +297,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(287, 201);
+            this.btnOK.Location = new System.Drawing.Point(16, 95);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(86, 46);
@@ -301,10 +308,10 @@
             // 
             // btnReverse
             // 
-            this.btnReverse.Location = new System.Drawing.Point(206, 210);
+            this.btnReverse.Location = new System.Drawing.Point(42, 56);
             this.btnReverse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReverse.Name = "btnReverse";
-            this.btnReverse.Size = new System.Drawing.Size(75, 47);
+            this.btnReverse.Size = new System.Drawing.Size(75, 32);
             this.btnReverse.TabIndex = 34;
             this.btnReverse.Text = "Reverse";
             this.btnReverse.UseVisualStyleBackColor = true;
@@ -312,68 +319,103 @@
             // 
             // btnForward
             // 
-            this.btnForward.Location = new System.Drawing.Point(125, 210);
+            this.btnForward.Location = new System.Drawing.Point(42, 20);
             this.btnForward.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnForward.Name = "btnForward";
-            this.btnForward.Size = new System.Drawing.Size(75, 47);
+            this.btnForward.Size = new System.Drawing.Size(75, 32);
             this.btnForward.TabIndex = 35;
             this.btnForward.Text = "Forward";
             this.btnForward.UseVisualStyleBackColor = true;
             this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
             // 
-            // txtTemp
+            // label4
             // 
-            this.txtTemp.Location = new System.Drawing.Point(393, 353);
-            this.txtTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTemp.Name = "txtTemp";
-            this.txtTemp.Size = new System.Drawing.Size(57, 22);
-            this.txtTemp.TabIndex = 36;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1259, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 17);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "(rpm)";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtKp);
+            this.groupBox1.Controls.Add(this.txtKi);
+            this.groupBox1.Controls.Add(this.txtKd);
+            this.groupBox1.Controls.Add(this.lbKp);
+            this.groupBox1.Controls.Add(this.lbKi);
+            this.groupBox1.Controls.Add(this.lbKd);
+            this.groupBox1.Location = new System.Drawing.Point(255, 297);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(176, 125);
+            this.groupBox1.TabIndex = 40;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "PID Controller";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btRun);
+            this.groupBox2.Controls.Add(this.btConnect);
+            this.groupBox2.Controls.Add(this.btClear);
+            this.groupBox2.Controls.Add(this.btnSend);
+            this.groupBox2.Controls.Add(this.btnStop);
+            this.groupBox2.Controls.Add(this.btnOK);
+            this.groupBox2.Location = new System.Drawing.Point(22, 174);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(217, 233);
+            this.groupBox2.TabIndex = 41;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Button";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnForward);
+            this.groupBox3.Controls.Add(this.btnReverse);
+            this.groupBox3.Location = new System.Drawing.Point(255, 174);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(149, 100);
+            this.groupBox3.TabIndex = 42;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Mode selection";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 252);
+            this.label2.Location = new System.Drawing.Point(163, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 16);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "PID Controller";
+            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "STATE";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 435);
+            this.ClientSize = new System.Drawing.Size(1361, 475);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtTemp);
-            this.Controls.Add(this.btnForward);
-            this.Controls.Add(this.btnReverse);
-            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lbPV);
             this.Controls.Add(this.txtPv);
             this.Controls.Add(this.lbSP);
             this.Controls.Add(this.txtSp);
-            this.Controls.Add(this.btnStop);
-            this.Controls.Add(this.btnSend);
             this.Controls.Add(this.lbBaud);
-            this.Controls.Add(this.lbKd);
-            this.Controls.Add(this.lbKi);
-            this.Controls.Add(this.lbKp);
-            this.Controls.Add(this.txtKd);
-            this.Controls.Add(this.txtKi);
-            this.Controls.Add(this.txtKp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.btClear);
-            this.Controls.Add(this.btRun);
             this.Controls.Add(this.btExit);
-            this.Controls.Add(this.btConnect);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.zedGraphControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,7 +450,10 @@
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnReverse;
         private System.Windows.Forms.Button btnForward;
-        private System.Windows.Forms.TextBox txtTemp;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label2;
     }
 }

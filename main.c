@@ -21,14 +21,14 @@
 #define WRAP 65535	// WRAP+1 la chu ki PWM
 #define EN_A 10		// PIN encoder
 #define EN_B 11
-#define PPR 8000	//so xung toi da cua encoder
-#define SAMPLE_TIME 500 // Thoi gian lay mau ms
+#define PPR 330	//so xung toi da cua encoder
+#define SAMPLE_TIME 10 // Thoi gian lay mau ms
 
 #define ENDSTDIN	255
 #define CR	13
 #define LED_PIN 25
 
-#define BUFFER_SIZE 11
+#define BUFFER_SIZE 35
 
 double velocity = 0;
 int position = 0;
@@ -53,13 +53,15 @@ double Sp;
 uint8_t rcvByte[8];
 uint8_t buffer[BUFFER_SIZE];
 
+float pv1 = 0, e1 = 0, e2 = 0;
+
 float PID_Controller(float sp, float pv, float kp, float ki, float kd){
 	float e = sp - pv;
-	static float pv1 = 0, e1 = 0, e2 = 0;
+	//static float pv1 = 0, e1 = 0, e2 = 0;
     pv = pv1 + kp * (e - e1) + ki * 0.05 * (e + e1) + kd * (e - 2* e1 + e2) /0.1;
-    if (pv < -1)
-        pv = -1;
-    else if (pv > 1) pv = 1;
+    if (pv < 0)
+        pv = 0;
+    else if (pv > 65535) pv = 65535;
     pv1 = pv;
     e2 = e1;
     e1 = e;
@@ -71,7 +73,7 @@ bool repeating_timer_callback(struct repeating_timer *t) {
 	new_value = quadrature_encoder_get_count(pio, sm);
 	new_time = time_us_64();
 	delta = new_value - old_value;
-	velocity = delta/((new_time-old_time)*1e-6);
+	velocity = delta/((new_time-old_time)*1e-6)*60/400;
 	position = new_value;	//ko chinh cho vi tri ve 0 khi qua 8000 duoc vi phai sua ct torng file .pio
 	old_value = new_value;
 	old_time = new_time;
@@ -81,6 +83,7 @@ bool repeating_timer_callback(struct repeating_timer *t) {
 	//printf("%lfV\n",velocity);
     //printf("position %8d, velocity %lf\n", position, velocity);
 	//printf("S,%ld,%ld\n",(int)velocity,position);
+	pv_PID = PID_Controller(Sp, velocity, Kp, Ki, Kd);
 	printf("S,%d,%d\n",(int)Sp,(int)velocity);
     return true;
 }
@@ -105,17 +108,17 @@ void buffer_received() {
 		rcvByte[loop] = buffer[2 + loop];
 	Sp = ConvertByteToDouble(rcvByte);
 
-	// for (int loop = 0; loop < 8; loop++)
-	// 	rcvByte[loop] = buffer[10 + loop];
-	// Kp = ConvertByteToDouble(rcvByte);
+	for (int loop = 0; loop < 8; loop++)
+		rcvByte[loop] = buffer[10 + loop];
+	Kp = ConvertByteToDouble(rcvByte);
 
-	// for (int loop = 0; loop < 8; loop++)
-	// 	rcvByte[loop] = buffer[18 + loop];
-	// Ki = ConvertByteToDouble(rcvByte);
+	for (int loop = 0; loop < 8; loop++)
+		rcvByte[loop] = buffer[18 + loop];
+	Ki = ConvertByteToDouble(rcvByte);
 
-	// for (int loop = 0; loop < 8; loop++)
-	// 	rcvByte[loop] = buffer[26 + loop];
-	// Kd = ConvertByteToDouble(rcvByte);
+	for (int loop = 0; loop < 8; loop++)
+		rcvByte[loop] = buffer[26 + loop];
+	Kd = ConvertByteToDouble(rcvByte);
 }
 
 int main() {
@@ -158,7 +161,8 @@ int main() {
 	//LOOP-------------------------------------------------------------
 	while(1)
 	{
-		scanf("%11s", buffer);
+		// NHO SUA SCANF 
+		scanf("%35s", buffer);
 
 		uint8_t run = buffer[0];
 		uint8_t ran = buffer[1];
@@ -171,18 +175,26 @@ int main() {
 			gpio_put(LED_PIN, 0);
 			pwm_set_gpio_level(A_PIN, 0);
 			pwm_set_gpio_level(B_PIN, 0);
+
+			// Kp = 0;
+			// Ki = 0;
+			// Kd = 0;
+			// pv1 = 0;
+			// e1 = 0;
+			// e2 = 0;
+			//velocity = 0;
 		}
 
 		else if(run == 1){
 			if(ran == 0){
 				gpio_put(LED_PIN, 1);
-				pwm_set_gpio_level(A_PIN, Sp);
+				pwm_set_gpio_level(A_PIN, (int)pv_PID);
 				pwm_set_gpio_level(B_PIN, 0);
 			}
 			else if(ran == 1){
 				gpio_put(LED_PIN, 1);
-				pwm_set_gpio_level(B_PIN, Sp);
-				pwm_set_gpio_level(A_PIN, 0);
+				pwm_set_gpio_level(B_PIN, 0);
+				pwm_set_gpio_level(A_PIN, (int)pv_PID);
 			}
 		}
 		// if ((run== 1) && (ran== 1)) {
